@@ -6,10 +6,12 @@ from SX127x.board_config import BOARD
 
 # definicoes do LoRa
 lora = LoRaBeacon(LoRa)
+lo = LoRa()
 lora.__init__(lora, verbose=False)
 BOARD.blink(0.2, 4)
 
 # construcao do codigo
 payload = "enviando a primeira mensagem com o lora"
-lora.on_tx_done(lora)
 lora.start(lora)
+lo.write_payload(payload)
+lora.on_tx_done(lora)
