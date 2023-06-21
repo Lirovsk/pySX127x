@@ -105,7 +105,6 @@ class BOARD:
         BOARD.add_event_detect(BOARD.DIO0, callback=cb_dio0)
         BOARD.add_event_detect(BOARD.DIO1, callback=cb_dio1)
         BOARD.add_event_detect(BOARD.DIO2, callback=cb_dio2)
-        BOARD.add_event_detect(BOARD.DIO3, callback=cb_dio3)
         # the modtronix inAir9B does not expose DIO4 and DIO5
         if switch_cb is not None:
             GPIO.add_event_detect(BOARD.SWITCH, GPIO.RISING, callback=switch_cb, bouncetime=300)
