@@ -16,6 +16,5 @@ BOARD.blink(0.2, 4)
 BOARD.reset()
 BOARD.blink(0.2, 6)
 lora.set_mode(MODE.STDBY)
-lora.__init__(lora, verbose= True, do_calibration= True, calibration_freq=910)
 payload = "enviando mensagens pela primeira vez"
 lora.write_payload(payload)
