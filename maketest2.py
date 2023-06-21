@@ -19,6 +19,6 @@ BOARD.blink(0.4, 3)
 lora.set_mode(MODE.SLEEP)
 time.sleep(1)
 lora.set_mode(MODE.STDBY)
-msg = [2023.2]
+msg = [20232]
 lora.write_payload(msg)
 BOARD.blink(0.1, 3)
