@@ -14,7 +14,7 @@ BOARD.blink(0.2, 2)
 # construcao do codigo
 lora.set_mode(MODE.STDBY)
 payload = ["enviando mensagens pela primeira vez"]
-lora.write_payload(payload)
+lora.write_payload(payload[0])
 BOARD.blink(0.4, 3)
 lora.set_mode(MODE.SLEEP)
 time.sleep(1)
