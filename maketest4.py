@@ -11,7 +11,7 @@ lora.__init__(lora, verbose=False)
 BOARD.blink(0.2, 4)
 
 # construcao do codigo
-payload = "enviando a primeira mensagem com o lora"
+payload = ["enviando a primeira mensagem com o lora"]
 lora.start(lora)
 lo.write_payload(payload)
 lora.on_tx_done(lora)
