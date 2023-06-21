@@ -8,7 +8,7 @@ from SX127x.constants import *
 # definicoes do  módulo e da placa
 BOARD.setup()
 lora = LoRa()
-print(BOARD.spidev)
+print(BOARD.SpiDev)
 print(lora.get_all_registers)
 BOARD.blink(0.2, 4)
 

@@ -8,7 +8,7 @@ BOARD.setup()
 
 # definicoes do LoRa
 lora = LoRa()
-lora.__init__(lora, verbose= True, do_calibration= True, calibration_freq=910)
+lora.__init__( verbose= True, do_calibration= True, calibration_freq=910)
 BOARD.blink(0.2, 2)
 
 # construcao do codigo
