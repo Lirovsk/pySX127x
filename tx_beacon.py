@@ -98,7 +98,7 @@ class LoRaBeacon(LoRa):
         while True:
             sleep(1)
 
-lora = LoRaBeacon(verbose=False)
+lora = LoRaBeacon(verbose=True)
 args = parser.parse_args(lora)
 
 lora.set_pa_config(pa_select=1)
